@@ -1,0 +1,76 @@
+$blue: #3A879B;
+$brown: #A14D37;
+$pink: #F17586;
+
+body {
+  background: darken($blue, 32);
+  margin: 0;
+  font-family: 'LexendVariable', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.mainPage {
+  font-size: 1.25em;
+  max-width: 60em;
+  font-weight: 325;
+
+  background: lighten($pink, 20);
+  border: 10px solid $blue;
+  border-radius: 20px;
+  padding: 0 2em;
+  margin: 3em;
+  box-shadow: 0 3px 8px #0008;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+
+  img {
+    object-fit: contain;
+    max-width: 100%;
+    align-self: end;
+  }
+
+  > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 18em;
+    min-width: 18em;
+    display: inline-block;
+  }
+
+  h1, h3 {
+    text-align: center;
+    font-weight: 450;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-top: 0;
+  }
+
+  .links {
+    margin: auto;
+    td:first-child {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .mainPage {
+    font-size: 1em;
+  }
+}

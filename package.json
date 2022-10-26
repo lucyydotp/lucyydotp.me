@@ -1,0 +1,27 @@
+{
+  "name": "new-website-stuff",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "parcel --host 0.0.0.0 src/index.html"
+  },
+  "dependencies": {
+    "@fontsource/lexend": "^4.5.13",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "@types/react": "^18.0.23",
+    "@types/react-dom": "^18.0.7",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "sharp": "^0.29.3",
+    "typescript": "^4.8.4"
+  }
+}
