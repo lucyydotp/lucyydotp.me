@@ -81,6 +81,9 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background: darken($bg, 5);
+  }
   .mainPage {
     background: desaturate(darken($pink, 55), 25);
     color: lighten($pink, 20);
