@@ -11,14 +11,14 @@ const imageUrl = new URL(
 ).toString();
 
 function Page() {
-    return <div className='mainPage'>
+    return <main className='mainPage dark'>
         <img className='mainImage' src={imageUrl} alt='cute profile picture drawing'/>
         <div>
             <section className='header'>
                 <h1>lucyy.p</h1>
-                <h3>Lucy Poulton</h3>
+                <h2>Lucy Poulton</h2>
             </section>
-            <table className='links'>
+            <table className='links' role='presentation'>
                 <tbody>
                 <tr>
                     <td><FontAwesomeIcon icon={faBriefcase}/></td>
@@ -48,7 +48,7 @@ function Page() {
                 thoroughly enjoy spending time making my work the best it can be.
             </p>
         </div>
-    </div>
+    </main>
 }
 
 createRoot(document.getElementById('root')!).render(<Page/>)

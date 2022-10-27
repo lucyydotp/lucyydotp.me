@@ -53,7 +53,7 @@ a {
     display: inline-block;
   }
 
-  h1, h3 {
+  h1, h2 {
     text-align: center;
     font-weight: 450;
   }
@@ -61,7 +61,8 @@ a {
   h1 {
     margin-bottom: 0;
   }
-  h3 {
+  h2 {
+    font-size: 1.1em;
     margin-top: 0;
   }
 
@@ -76,5 +77,12 @@ a {
 @media screen and (max-width: 65em) {
   .mainPage {
     font-size: 1em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .mainPage {
+    background: desaturate(darken($pink, 55), 25);
+    color: lighten($pink, 20);
   }
 }
