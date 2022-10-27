@@ -3,8 +3,10 @@ $teal: #3A879B;
 $brown: #A14D37;
 $pink: #F17586;
 
+$bg: desaturate(darken($blue, 10), 25);
+
 body {
-  background: desaturate(darken($blue, 10), 25);
+  background: $bg;
   margin: 0;
   font-family: 'LexendVariable', sans-serif;
 }
@@ -25,8 +27,9 @@ a {
   max-width: 60em;
   font-weight: 325;
 
+  color: $bg;
   background: lighten($pink, 20);
-  border: 10px solid $teal;
+  border: 5px solid $teal;
   border-radius: 20px;
   padding: 0 2em;
   margin: 3em;
