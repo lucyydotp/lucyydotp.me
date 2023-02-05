@@ -15,8 +15,8 @@ function Page() {
         <img className='mainImage' src={imageUrl} alt='cute profile picture drawing'/>
         <div>
             <section className='header'>
-                <h1>lucyy.p</h1>
-                <h2>Lucy Poulton</h2>
+                <h1>Lucy Poulton</h1>
+                <h2>lucyy.p</h2>
             </section>
             <table className='links' role='presentation'>
                 <tbody>
