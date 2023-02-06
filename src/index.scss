@@ -55,6 +55,7 @@ a {
     place-self: end center;
 
     p {
+      color: $bg;
       position: absolute;
       bottom: 0;
       right: 10%;
@@ -85,6 +86,17 @@ a {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: darken($bg, 5);
+  }
+  .mainPage {
+    background: desaturate(darken($pink, 55), 25);
+    color: lighten($pink, 20);
+  }
+}
+
+
 @media screen and (max-width: 65em) {
   .mainPage {
     margin: 1em;
@@ -109,20 +121,11 @@ a {
     height: 100%;
     p {
       position: unset !important;
+      color: inherit !important;
     }
   }
   p {
     margin: 1em 1em 0;
     text-align: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: darken($bg, 5);
-  }
-  .mainPage {
-    background: desaturate(darken($pink, 55), 25);
-    color: lighten($pink, 20);
   }
 }
