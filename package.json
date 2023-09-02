@@ -2,6 +2,7 @@
   "name": "new-website-stuff",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "parcel src/index.html",
