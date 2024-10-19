@@ -1,3 +1,8 @@
+@import url("@fontsource-variable/lexend/index.css");
+@import url("@fortawesome/fontawesome-free/css/fontawesome.css");
+@import url("@fortawesome/fontawesome-free/css/solid.css");
+@import url("@fortawesome/fontawesome-free/css/brands.css");
+
 $blue: #242A58;
 $teal: #3A879B;
 $brown: #A14D37;
@@ -12,7 +17,7 @@ $bg: desaturate(darken($blue, 10), 25);
 body {
   background: $bg;
   margin: 0;
-  font-family: 'LexendVariable', sans-serif;
+  font-family: 'Lexend Variable', sans-serif;
 }
 
 a {
